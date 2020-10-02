@@ -36,3 +36,5 @@ deploy:
   file: ${HOME}/${TRAVIS_COMMIT}-${TRAVIS_BUILD_NUMBER}.tar.gz
   draft: true
   skip_cleanup: true
+  on:
+    branch: stable-2.6
