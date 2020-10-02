@@ -1,0 +1,38 @@
+language: cpp
+os: osx
+osx_image: xcode11.6
+
+env:
+  global:
+    - NC_BUILD_DIR=${TRAVIS_BUILD_DIR}/build
+    - NC_INSTALL_DIR=${HOME}/nextcloud-desktop-client
+
+addons:
+  homebrew:
+    packages:
+      - cmake
+      - qt5
+      - qtkeychain
+      - openssl
+    casks:
+      - packages
+
+script:
+  - mkdir -p ${NC_BUILD_DIR}
+  - cd ${NC_BUILD_DIR}
+  - cmake -Wno-dev -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/ -DCMAKE_PREFIX_PATH=/usr/local/opt/qt5 -DCMAKE_INSTALL_PREFIX=${NC_INSTALL_DIR} -DCMAKE_BUILD_TYPE=Debug -DNO_SHIBBOLETH=1 ${TRAVIS_BUILD_DIR}
+  - make
+  - make install
+  - bash admin/osx/create_mac.sh ${NC_INSTALL_DIR} ${NC_BUILD_DIR} "Quality Location GmbH"
+
+before_deploy:
+  - cd ${HOME}
+  - tar -zcf ${TRAVIS_COMMIT}-${TRAVIS_BUILD_NUMBER}.tar.gz nextcloud-desktop-client
+
+deploy:
+  provider: releases
+  api_key:
+    secure: dCHyXhCt0FtMGdWvKuHofXs4mHBmdSnlz+iVYZqeTA2x11W5+WsE/lxlWTkRgb2/qYHejera7eVfdDyBbd/AzfpjYyo9f0Y++fl9L1uaSHHJd5SgnUsYvrCYSPFsCSM+iLPHOMu11D3YkjCY7Dqp+Q0nE9f62DjMS93kd+BejlRtFiy5L09H+m7pn/TweY2uo7uu7xvsvIJkha19s92gZpKJf8VMPNdh6inBT3iuiUx42RCe7RebLLzBJqQBzrg6odXinAyss5B4L29mnR+2bKkHD2zoOf2O0fZzb8+KO+OIgm42NvzDNagHBqL8XYVMN1nDgiyf3IMk9he3U8Q28huTIzwQaNlHAGs6KQpbZvC0HkUSc51jrzsDBMI/UYp411HRU7AK8oU3MvI0KGMrGAam7O9lXukWV4yuA2mCq7ni551q5kkgicQCuf5Yw9+oH8y/9JzcisTYv7KNMkkl2LmUS8Gsh8YO8G0ymNgxpQEDfgDg+shD/71Z85z0xXlJDkrpXmYTvakNRl6cGuSJhRCRL95nCnj6UqLhVkrjs1+GJErmMOlk5W6OK/a+5ApZKyI+gDTuZ8caRgU9/Uz1RpAZjgkcE1Gx850R0OTAa0R2Fwy19hUe8cwMbMGpZXb5xS1hOV3ulSksfASGbJdqMHecz6x2H9A4GHscI3iKmVQ=
+  file: ${HOME}/${TRAVIS_COMMIT}-${TRAVIS_BUILD_NUMBER}.tar.gz
+  draft: true
+  skip_cleanup: true
