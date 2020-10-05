@@ -52,10 +52,8 @@ void LegalNotice::changeEvent(QEvent *e)
 
 void LegalNotice::customizeStyle()
 {
-    QString notice = tr("<p>Copyright 2017-2020 Nextcloud GmbH<br />"
-                        "Copyright 2012-2018 ownCloud GmbH</p>");
+    QString notice = tr("<p>Copyright 2017-2020 EFS AG");
 
-    notice += tr("<p>Licensed under the GNU General Public License (GPL) Version 2.0 or any later version.</p>");
 
     notice += "<p>&nbsp;</p>";
     notice += Theme::instance()->aboutDetails();

@@ -328,13 +328,10 @@ QString Theme::gitSHA1() const
 {
     QString devString;
 #ifdef GIT_SHA1
-    const QString githubPrefix(QLatin1String(
-        "https://github.com/nextcloud/desktop/commit/"));
     const QString gitSha1(QLatin1String(GIT_SHA1));
     devString = QCoreApplication::translate("nextcloudTheme::about()",
-        "<p><small>Built from Git revision <a href=\"%1\">%2</a>"
+        "<p><small>Built from Git revision %2"
         " on %3, %4 using Qt %5, %6</small></p>")
-                    .arg(githubPrefix + gitSha1)
                     .arg(gitSha1.left(6))
                     .arg(__DATE__)
                     .arg(__TIME__)
@@ -355,9 +352,8 @@ QString Theme::about() const
     devString = tr("<p>%1 Desktop Client</p>")
               .arg(APPLICATION_NAME);
 
-    devString += tr("<p>Version %1. For more information please click <a href='%2'>here</a>.</p>")
-              .arg(QString::fromLatin1(MIRALL_STRINGIFY(MIRALL_VERSION)) + QString(" (%1)").arg(osName))
-              .arg(helpUrl());
+    devString += tr("<p>Version %1.</p>")
+              .arg(QString::fromLatin1(MIRALL_STRINGIFY(MIRALL_VERSION)) + QString(" (%1)").arg(osName));
 
     return devString;
 }
@@ -365,9 +361,8 @@ QString Theme::about() const
 QString Theme::aboutDetails() const
 {
     QString devString;
-    devString = tr("<p>Version %1. For more information please click <a href='%2'>here</a>.</p>")
-              .arg(MIRALL_VERSION_STRING)
-              .arg(helpUrl());
+    devString = tr("<p>Version %1.</p>")
+              .arg(MIRALL_VERSION_STRING);
 
     devString += tr("<p>This release was supplied by %1</p>")
               .arg(APPLICATION_VENDOR);

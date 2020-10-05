@@ -106,15 +106,18 @@ SettingsDialog::SettingsDialog(ownCloudGui *gui, QWidget *parent)
 
     // Connect styleChanged events to our widgets, so they can adapt (Dark-/Light-Mode switching)
     connect(this, &SettingsDialog::styleChanged, generalSettings, &GeneralSettings::slotStyleChanged);
-
-    QAction *networkAction = createColorAwareAction(QLatin1String(":/client/resources/network.png"), tr("Network"));
-    _actionGroup->addAction(networkAction);
-    _toolBar->addAction(networkAction);
-    NetworkSettings *networkSettings = new NetworkSettings;
-    _ui->stack->addWidget(networkSettings);
-
     _actionGroupWidgets.insert(generalAction, generalSettings);
-    _actionGroupWidgets.insert(networkAction, networkSettings);
+
+    /*
+        REMOVES THE NETWORK TAB - Jan Lahmer
+
+        QAction *networkAction = createColorAwareAction(QLatin1String(":/client/resources/network.png"), tr("Network"));
+        _actionGroup->addAction(networkAction);
+        _toolBar->addAction(networkAction);
+        NetworkSettings *networkSettings = new NetworkSettings;
+        _ui->stack->addWidget(networkSettings);
+        _actionGroupWidgets.insert(networkAction, networkSettings);
+    */
 
     foreach(auto ai, AccountManager::instance()->accounts()) {
         accountAdded(ai.data());
@@ -216,12 +219,12 @@ void SettingsDialog::activityAdded(AccountState *s){
 
     // Note: all the actions have a '\n' because the account name is in two lines and
     // all buttons must have the same size in order to keep a good layout
-    QAction *action = createColorAwareAction(QLatin1String(":/client/resources/activity.png"), tr("Activity"));
+    QAction *action = createColorAwareAction(QLatin1String(":/client/resources/dialog-close.png"), tr("Logout"));
     action->setProperty("account", QVariant::fromValue(s));
     _toolBar->insertAction(_actionBefore, action);
     _actionGroup->addAction(action);
-    _actionGroupWidgets.insert(action, _activitySettings[s]);
-    connect(action, &QAction::triggered, this, &SettingsDialog::showActivityPage);
+    // _actionGroupWidgets.insert(action, _activitySettings[s]);
+    connect(action, &QAction::triggered, this, &SettingsDialog::slotDeleteAccount);
 }
 
 void SettingsDialog::accountAdded(AccountState *s)
