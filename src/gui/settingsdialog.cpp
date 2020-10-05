@@ -40,6 +40,7 @@
 #include <QWidgetAction>
 #include <QPainter>
 #include <QPainterPath>
+#include <QMessageBox>
 
 namespace {
 const char TOOLBAR_CSS[] =
@@ -260,8 +261,9 @@ void SettingsDialog::accountAdded(AccountState *s)
     auto accountSettings = new AccountSettings(s, this);
     _ui->stack->insertWidget(0, accountSettings);
     _actionGroup->addAction(accountAction);
-    _actionGroupWidgets.insert(accountAction, accountSettings);
+    _actionGroupWidgets.insert(accountAction, _activitySettings[s]);
     _actionForAccount.insert(s->account().data(), accountAction);
+    connect(accountAction, &QAction::triggered, this, &SettingsDialog::showActivityPage);
     accountAction->trigger();
 
     connect(accountSettings, &AccountSettings::folderChanged, _gui, &ownCloudGui::slotFoldersChanged);
