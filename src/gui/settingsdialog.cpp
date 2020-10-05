@@ -286,6 +286,7 @@ void SettingsDialog::accountAdded(AccountState *s)
 
 void SettingsDialog::slotDeleteAccount()
 {
+    if (auto account = qvariant_cast<AccountState*>(sender()->property("account"))) {
     // Deleting the account potentially deletes 'this', so
     // the QMessageBox should be destroyed before that happens.
     {
@@ -293,7 +294,7 @@ void SettingsDialog::slotDeleteAccount()
             tr("Confirm Account Removal"),
             tr("<p>Do you really want to remove the connection to the account <i>%1</i>?</p>"
                "<p><b>Note:</b> This will <b>not</b> delete any files.</p>")
-                .arg(_accountState->account()->displayName()),
+                .arg(account->account()->displayName()),
             QMessageBox::NoButton,
             this);
         QPushButton *yesButton =
@@ -310,11 +311,12 @@ void SettingsDialog::slotDeleteAccount()
     _model->setAccountState(nullptr);
 
     auto manager = AccountManager::instance();
-    manager->deleteAccount(_accountState);
+    manager->deleteAccount(account);
     manager->save();
 
     // IMPORTANT: "this" is deleted from this point on. We should probably remove this synchronous
     // .exec() QMessageBox magic above as it recurses into the event loop.
+    }
 }
 
 void SettingsDialog::slotAccountAvatarChanged()
