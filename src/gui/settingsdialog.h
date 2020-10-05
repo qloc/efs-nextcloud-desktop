@@ -75,6 +75,7 @@ protected:
 private slots:
     void accountAdded(AccountState *);
     void accountRemoved(AccountState *);
+    void slotDeleteAccount();
 
 private:
     void customizeStyle();
