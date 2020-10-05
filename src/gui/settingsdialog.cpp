@@ -308,7 +308,7 @@ void SettingsDialog::slotDeleteAccount()
     }
 
     // Else it might access during destruction. This should be better handled by it having a QSharedPointer
-    _model->setAccountState(nullptr);
+    //_model->setAccountState(nullptr);
 
     auto manager = AccountManager::instance();
     manager->deleteAccount(account);
