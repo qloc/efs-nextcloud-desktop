@@ -657,7 +657,7 @@ Wait for the new sync, then encrypt it.</source>
     <name>OCC::ConnectionValidator</name>
     <message>
         <location filename="../src/gui/connectionvalidator.cpp" line="50"/>
-        <source>No Nextcloud account configured</source>
+        <source>No EFScloud account configured</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1624,7 +1624,7 @@ Items where deletion is allowed will be deleted if they prevent a directory from
     </message>
     <message>
         <location filename="../src/gui/legalnotice.cpp" line="55"/>
-        <source>&lt;p&gt;Copyright 2017-2020 Nextcloud GmbH&lt;br /&gt;Copyright 2012-2018 ownCloud GmbH&lt;/p&gt;</source>
+        <source>&lt;p&gt;Copyright 2017-2020 EFScloud GmbH&lt;/p&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2193,8 +2193,8 @@ It is not advisable to use it.</source>
     </message>
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="525"/>
-        <source>creating folder on Nextcloud: %1</source>
-        <translation>creating folder on Nextcloud: %1</translation>
+        <source>creating folder on EFScloud: %1</source>
+        <translation>creating folder on EFScloud: %1</translation>
     </message>
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="541"/>
@@ -2667,7 +2667,7 @@ It is not advisable to use it.</source>
     </message>
     <message>
         <location filename="../src/gui/sharedialog.ui" line="82"/>
-        <source>Nextcloud Path:</source>
+        <source>EFScloud Path:</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2941,7 +2941,7 @@ It is not advisable to use it.</source>
     <message>
         <location filename="../src/gui/socketapi.cpp" line="465"/>
         <source>Share with %1</source>
-        <comment>parameter is Nextcloud</comment>
+        <comment>parameter is EFScloud</comment>
         <translation>Share with %1</translation>
     </message>
     <message>
@@ -3514,7 +3514,7 @@ It is not advisable to use it.</source>
     <message>
         <location filename="../src/libsync/theme.cpp" line="369"/>
         <source>&lt;p&gt;%1 Desktop Client&lt;/p&gt;</source>
-        <extracomment>Example text: &quot;&lt;p&gt;Nextcloud Desktop Client&lt;/p&gt;&quot; (%1 is the application name)</extracomment>
+        <extracomment>Example text: &quot;&lt;p&gt;EFScloud Desktop Client&lt;/p&gt;&quot; (%1 is the application name)</extracomment>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4158,7 +4158,7 @@ It is not advisable to use it.</source>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="25"/>
         <location filename="../src/gui/tray/Window.qml" line="103"/>
-        <source>Nextcloud desktop main dialog</source>
+        <source>EFScloud desktop main dialog</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4223,7 +4223,7 @@ It is not advisable to use it.</source>
     </message>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="432"/>
-        <source>Open Nextcloud Talk in browser</source>
+        <source>Open EFScloud Talk in browser</source>
         <translation type="unfinished"/>
     </message>
     <message>

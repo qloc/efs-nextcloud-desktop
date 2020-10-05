@@ -657,8 +657,8 @@ Wait for the new sync, then encrypt it.</source>
     <name>OCC::ConnectionValidator</name>
     <message>
         <location filename="../src/gui/connectionvalidator.cpp" line="50"/>
-        <source>No Nextcloud account configured</source>
-        <translation>Nincs Nextcloud fiók beállítva</translation>
+        <source>No EFScloud account configured</source>
+        <translation>Nincs EFScloud fiók beállítva</translation>
     </message>
     <message>
         <location filename="../src/gui/connectionvalidator.cpp" line="147"/>
@@ -1631,8 +1631,8 @@ Ahol a törlés engedélyezett, ott az elemek törölve lesznek, ha megakadályo
     </message>
     <message>
         <location filename="../src/gui/legalnotice.cpp" line="55"/>
-        <source>&lt;p&gt;Copyright 2017-2020 Nextcloud GmbH&lt;br /&gt;Copyright 2012-2018 ownCloud GmbH&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Copyright 2017-2020 Nextcloud GmbH&lt;br /&gt;Copyright 2012-2018 ownCloud GmbH&lt;/p&gt;</translation>
+        <source>&lt;p&gt;Copyright 2017-2020 EFScloud GmbH&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Copyright 2017-2020 EFScloud GmbH&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/gui/legalnotice.cpp" line="58"/>
@@ -2200,8 +2200,8 @@ Használata nem ajánlott.</translation>
     </message>
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="525"/>
-        <source>creating folder on Nextcloud: %1</source>
-        <translation>mappa létrehozása a Nextcloudon: %1</translation>
+        <source>creating folder on EFScloud: %1</source>
+        <translation>mappa létrehozása a EFScloudon: %1</translation>
     </message>
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="541"/>
@@ -2674,8 +2674,8 @@ Használata nem ajánlott.</translation>
     </message>
     <message>
         <location filename="../src/gui/sharedialog.ui" line="82"/>
-        <source>Nextcloud Path:</source>
-        <translation>Nextcloud útvonal:</translation>
+        <source>EFScloud Path:</source>
+        <translation>EFScloud útvonal:</translation>
     </message>
     <message>
         <location filename="../src/gui/sharedialog.ui" line="113"/>
@@ -2948,7 +2948,7 @@ Használata nem ajánlott.</translation>
     <message>
         <location filename="../src/gui/socketapi.cpp" line="465"/>
         <source>Share with %1</source>
-        <comment>parameter is Nextcloud</comment>
+        <comment>parameter is EFScloud</comment>
         <translation>Megosztás vele: %1</translation>
     </message>
     <message>
@@ -3521,7 +3521,7 @@ Használata nem ajánlott.</translation>
     <message>
         <location filename="../src/libsync/theme.cpp" line="369"/>
         <source>&lt;p&gt;%1 Desktop Client&lt;/p&gt;</source>
-        <extracomment>Example text: &quot;&lt;p&gt;Nextcloud Desktop Client&lt;/p&gt;&quot; (%1 is the application name)</extracomment>
+        <extracomment>Example text: &quot;&lt;p&gt;EFScloud Desktop Client&lt;/p&gt;&quot; (%1 is the application name)</extracomment>
         <translation>&lt;p&gt;%1 asztali kliens&lt;/p&gt;</translation>
     </message>
     <message>
@@ -4165,7 +4165,7 @@ Használata nem ajánlott.</translation>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="25"/>
         <location filename="../src/gui/tray/Window.qml" line="103"/>
-        <source>Nextcloud desktop main dialog</source>
+        <source>EFScloud desktop main dialog</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -4230,7 +4230,7 @@ Használata nem ajánlott.</translation>
     </message>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="432"/>
-        <source>Open Nextcloud Talk in browser</source>
+        <source>Open EFScloud Talk in browser</source>
         <translation type="unfinished"/>
     </message>
     <message>

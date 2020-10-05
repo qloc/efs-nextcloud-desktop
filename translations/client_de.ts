@@ -658,8 +658,8 @@ Warten Sie auf die neue Synchronisierung und verschlüsseln Sie sie dann.</trans
     <name>OCC::ConnectionValidator</name>
     <message>
         <location filename="../src/gui/connectionvalidator.cpp" line="50"/>
-        <source>No Nextcloud account configured</source>
-        <translation>Kein Nextcloud-Konto konfiguriert</translation>
+        <source>No EFScloud account configured</source>
+        <translation>Kein EFScloud-Konto konfiguriert</translation>
     </message>
     <message>
         <location filename="../src/gui/connectionvalidator.cpp" line="147"/>
@@ -1633,8 +1633,8 @@ Objekte, bei denen Löschen erlaubt ist, werden gelöscht, wenn diese das Lösch
     </message>
     <message>
         <location filename="../src/gui/legalnotice.cpp" line="55"/>
-        <source>&lt;p&gt;Copyright 2017-2020 Nextcloud GmbH&lt;br /&gt;Copyright 2012-2018 ownCloud GmbH&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Copyright 2017-2020 Nextcloud GmbH&lt;br /&gt;Copyright 2012-2018 ownCloud GmbH&lt;/p&gt;</translation>
+        <source>&lt;p&gt;Copyright 2017-2020 EFS-AG&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Copyright 2017-2020 EFS-AG&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../src/gui/legalnotice.cpp" line="58"/>
@@ -2202,8 +2202,8 @@ Es wird davon abgeraten sie zu verwenden.</translation>
     </message>
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="525"/>
-        <source>creating folder on Nextcloud: %1</source>
-        <translation>Erstelle Ordner auf Nextcloud: %1</translation>
+        <source>creating folder on EFScloud: %1</source>
+        <translation>Erstelle Ordner auf EFScloud: %1</translation>
     </message>
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="541"/>
@@ -2672,12 +2672,12 @@ Es wird davon abgeraten sie zu verwenden.</translation>
     <message>
         <location filename="../src/gui/sharedialog.ui" line="67"/>
         <source>ownCloud Path:</source>
-        <translation>Nextcloud-Pfad:</translation>
+        <translation>EFScloud-Pfad:</translation>
     </message>
     <message>
         <location filename="../src/gui/sharedialog.ui" line="82"/>
-        <source>Nextcloud Path:</source>
-        <translation>Nextcloud-Pfad:</translation>
+        <source>EFScloud Path:</source>
+        <translation>EFScloud-Pfad:</translation>
     </message>
     <message>
         <location filename="../src/gui/sharedialog.ui" line="113"/>
@@ -2950,7 +2950,7 @@ Es wird davon abgeraten sie zu verwenden.</translation>
     <message>
         <location filename="../src/gui/socketapi.cpp" line="465"/>
         <source>Share with %1</source>
-        <comment>parameter is Nextcloud</comment>
+        <comment>parameter is EFScloud</comment>
         <translation>Teile mit %1</translation>
     </message>
     <message>
@@ -3523,7 +3523,7 @@ Es wird davon abgeraten sie zu verwenden.</translation>
     <message>
         <location filename="../src/libsync/theme.cpp" line="369"/>
         <source>&lt;p&gt;%1 Desktop Client&lt;/p&gt;</source>
-        <extracomment>Example text: &quot;&lt;p&gt;Nextcloud Desktop Client&lt;/p&gt;&quot; (%1 is the application name)</extracomment>
+        <extracomment>Example text: &quot;&lt;p&gt;EFScloud Desktop Client&lt;/p&gt;&quot; (%1 is the application name)</extracomment>
         <translation>&lt;p&gt;%1 Desktop-Client&lt;/p&gt;</translation>
     </message>
     <message>
@@ -4167,8 +4167,8 @@ Es wird davon abgeraten sie zu verwenden.</translation>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="25"/>
         <location filename="../src/gui/tray/Window.qml" line="103"/>
-        <source>Nextcloud desktop main dialog</source>
-        <translation>Nextcloud Desktop-Hauptdialog</translation>
+        <source>EFScloud desktop main dialog</source>
+        <translation>EFScloud Desktop-Hauptdialog</translation>
     </message>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="141"/>
@@ -4232,8 +4232,8 @@ Es wird davon abgeraten sie zu verwenden.</translation>
     </message>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="432"/>
-        <source>Open Nextcloud Talk in browser</source>
-        <translation>Nextcloud Talk im Browser öffnen</translation>
+        <source>Open EFScloud Talk in browser</source>
+        <translation>EFScloud Talk im Browser öffnen</translation>
     </message>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="450"/>

@@ -621,7 +621,7 @@
     </message>
     <message>
         <location filename="../src/gui/connectionvalidator.cpp" line="50"/>
-        <source>No Nextcloud account configured</source>
+        <source>No EFScloud account configured</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1570,7 +1570,7 @@ Items where deletion is allowed will be deleted if they prevent a directory from
     </message>
     <message>
         <location filename="../src/gui/legalnotice.cpp" line="27"/>
-        <source>&lt;p&gt;Copyright 2017-2020 Nextcloud GmbH&lt;br /&gt;Copyright 2012-2018 ownCloud GmbH&lt;/p&gt;</source>
+        <source>&lt;p&gt;Copyright 2017-2020 EFScloud GmbH&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2146,7 +2146,7 @@ It is not advisable to use it.</source>
     </message>
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="543"/>
-        <source>creating folder on Nextcloud: %1</source>
+        <source>creating folder on EFScloud: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2640,7 +2640,7 @@ It is not advisable to use it.</source>
     </message>
     <message>
         <location filename="../src/gui/sharedialog.ui" line="82"/>
-        <source>Nextcloud Path:</source>
+        <source>EFScloud Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
