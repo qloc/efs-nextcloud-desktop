@@ -1,6 +1,6 @@
 /*
  * Copyright (C) by Olivier Goffart <ogoffart@woboq.com>
- * Copyright (C) by Michael Schuster <michael@nextcloud.com>
+ * Copyright (C) by Michael Schuster <michael@schuster.ms>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,8 +29,7 @@
 namespace OCC {
 
 Flow2AuthCredsPage::Flow2AuthCredsPage()
-    : AbstractCredentialsWizardPage(),
-    _flow2AuthWidget(nullptr)
+    : AbstractCredentialsWizardPage()
 {
     _layout = new QVBoxLayout(this);
 
@@ -51,7 +50,7 @@ Flow2AuthCredsPage::Flow2AuthCredsPage()
 
 void Flow2AuthCredsPage::initializePage()
 {
-    OwncloudWizard *ocWizard = qobject_cast<OwncloudWizard *>(wizard());
+    auto *ocWizard = qobject_cast<OwncloudWizard *>(wizard());
     Q_ASSERT(ocWizard);
     ocWizard->account()->setCredentials(CredentialsFactory::create("http"));
 
@@ -94,7 +93,7 @@ void Flow2AuthCredsPage::slotFlow2AuthResult(Flow2Auth::Result r, const QString 
     case Flow2Auth::LoggedIn: {
         _user = user;
         _appPassword = appPassword;
-        OwncloudWizard *ocWizard = qobject_cast<OwncloudWizard *>(wizard());
+        auto *ocWizard = qobject_cast<OwncloudWizard *>(wizard());
         Q_ASSERT(ocWizard);
 
         emit connectToOCUrl(ocWizard->account()->url().toString());
@@ -110,7 +109,7 @@ int Flow2AuthCredsPage::nextId() const
 
 void Flow2AuthCredsPage::setConnected()
 {
-    OwncloudWizard *ocWizard = qobject_cast<OwncloudWizard *>(wizard());
+    auto *ocWizard = qobject_cast<OwncloudWizard *>(wizard());
     Q_ASSERT(ocWizard);
 
     // bring wizard to top
@@ -119,7 +118,7 @@ void Flow2AuthCredsPage::setConnected()
 
 AbstractCredentials *Flow2AuthCredsPage::getCredentials() const
 {
-    OwncloudWizard *ocWizard = qobject_cast<OwncloudWizard *>(wizard());
+    auto *ocWizard = qobject_cast<OwncloudWizard *>(wizard());
     Q_ASSERT(ocWizard);
     return new WebFlowCredentials(
                 _user,

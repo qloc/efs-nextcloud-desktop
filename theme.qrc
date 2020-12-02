@@ -131,5 +131,36 @@
         <file>theme/colored/wizard-nextcloud@2x.png</file>
         <file>theme/colored/wizard-talk.png</file>
         <file>theme/colored/wizard-talk@2x.png</file>
+        <file>theme/white/folder.svg</file>
+        <file>theme/white/more-apps.svg</file>
+        <file>theme/white/talk-app.svg</file>
+        <file>theme/white/caret-down.svg</file>
+        <file>theme/black/caret-down.svg</file>
+        <file>theme/white/user.svg</file>
+        <file>theme/black/user.svg</file>
+        <file>theme/white/add.svg</file>
+        <file>theme/black/add.svg</file>
+        <file>theme/black/activity.svg</file>
+        <file>theme/black/bell.svg</file>
+        <file>theme/black/state-info.svg</file>
+        <file>theme/close.svg</file>
+        <file>theme/files.svg</file>
+        <file>theme/public.svg</file>
+        <file>theme/settings.svg</file>
+        <file>theme/confirm.svg</file>
+        <file>theme/copy.svg</file>
+        <file>theme/more.svg</file>
+        <file>theme/change.svg</file>
+        <file>theme/lock-http.svg</file>
+        <file>theme/lock-https.svg</file>
+        <file>theme/lock-broken.svg</file>
+        <file>theme/network.svg</file>
+        <file>theme/account.svg</file>
+        <file>theme/colored/add.svg</file>
+        <file>theme/colored/delete.svg</file>
+        <file>theme/colored/Nextcloud-icon.svg</file>
+        <file>theme/colored/Nextcloud-sidebar.svg</file>
+        <file>theme/add.svg</file>
+        <file>theme/share.svg</file>
     </qresource>
 </RCC>

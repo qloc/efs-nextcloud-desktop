@@ -101,6 +101,16 @@
         <source>Moving to the trash is not implemented on this platform</source>
         <translation>Lo spostamento nel cestino non è implementato su questa piattaforma</translation>
     </message>
+    <message>
+        <location filename="../src/libsync/filesystem.cpp" line="167"/>
+        <source>Error removing &apos;%1&apos;: %2</source>
+        <translation>Errore durante la rimozione di &apos;%1&apos;: %2</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/filesystem.cpp" line="183"/>
+        <source>Could not remove folder &apos;%1&apos;</source>
+        <translation>Impossibile rimuovere la cartella &apos;%1&apos;</translation>
+    </message>
 </context>
 <context>
     <name>Flow2AuthWidget</name>
@@ -652,6 +662,128 @@ Attendi la nuova sincronizzazione, quindi cifrala.</translation>
         <location filename="../src/libsync/clientsideencryption.cpp" line="1155"/>
         <source>Enter E2E passphrase</source>
         <translation>Digita la frase segreta E2E</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::ConflictDialog</name>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="14"/>
+        <source>Sync Conflict</source>
+        <translation>Conflitto di sincronizzazione</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="20"/>
+        <location filename="../src/gui/conflictdialog.cpp" line="94"/>
+        <source>Conflicting versions of %1.</source>
+        <translation>Versioni in conflitto di %1.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="32"/>
+        <source>Which version of the file do you want to keep?&lt;br/&gt;If you select both versions, the local file will have a number added to its name.</source>
+        <translation>Quale versione del file vuoi mantenere?&lt;br/&gt;Se selezioni entrambe le versioni, sarà aggiunto un numero al nome del file locale.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="46"/>
+        <source>Local version</source>
+        <translation>Versione locale</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="57"/>
+        <location filename="../src/gui/conflictdialog.ui" line="165"/>
+        <source>Click to open the file</source>
+        <translation>Fai clic per aprire il file</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="96"/>
+        <location filename="../src/gui/conflictdialog.ui" line="204"/>
+        <source>today</source>
+        <translation>oggi</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="103"/>
+        <location filename="../src/gui/conflictdialog.ui" line="211"/>
+        <source>0 byte</source>
+        <translation>0 byte</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="110"/>
+        <source>&lt;a href=&quot;%1&quot;&gt;Open local version&lt;/a&gt;</source>
+        <translation>&lt;a href=&quot;%1&quot;&gt;Apri versione locale&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="154"/>
+        <source>Server version</source>
+        <translation>Versione del server</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.ui" line="218"/>
+        <source>&lt;a href=&quot;%1&quot;&gt;Open server version&lt;/a&gt;</source>
+        <translation>&lt;a href=&quot;%1&quot;&gt;Apri versione del server&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.cpp" line="54"/>
+        <location filename="../src/gui/conflictdialog.cpp" line="177"/>
+        <source>Keep selected version</source>
+        <translation>Mantieni la versione selezionata</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.cpp" line="148"/>
+        <source>Open local version</source>
+        <translation>Apri la versione locale</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.cpp" line="156"/>
+        <source>Open server version</source>
+        <translation>Apri la versione del server</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.cpp" line="174"/>
+        <source>Keep both versions</source>
+        <translation>Mantieni entrambi le versioni</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.cpp" line="175"/>
+        <source>Keep local version</source>
+        <translation>Mantieni la versione locale</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictdialog.cpp" line="176"/>
+        <source>Keep server version</source>
+        <translation>Mantieni la versione del server</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::ConflictSolver</name>
+    <message>
+        <location filename="../src/gui/conflictsolver.cpp" line="88"/>
+        <source>Do you want to delete the directory &lt;i&gt;%1&lt;/i&gt; and all its contents permanently?</source>
+        <translation>Vuoi eliminare la cartella &lt;i&gt;%1&lt;/i&gt; e il suo contenuto definitivamente?</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictsolver.cpp" line="89"/>
+        <source>Do you want to delete the file &lt;i&gt;%1&lt;/i&gt; permanently?</source>
+        <translation>Vuoi eliminare il file &lt;i&gt;%1&lt;/i&gt; definitivamente?</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictsolver.cpp" line="90"/>
+        <source>Confirm deletion</source>
+        <translation>Conferma l&apos;eliminazione</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictsolver.cpp" line="134"/>
+        <location filename="../src/gui/conflictsolver.cpp" line="159"/>
+        <source>Error</source>
+        <translation>Errore</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/conflictsolver.cpp" line="134"/>
+        <location filename="../src/gui/conflictsolver.cpp" line="159"/>
+        <source>Moving file failed:
+
+%1</source>
+        <translation>Spostamento file non riuscito:
+
+%1</translation>
     </message>
 </context>
 <context>
@@ -1453,6 +1585,11 @@ Se continui normalmente la sincronizzazione provocherai la sovrascrittura di tut
         <translation>Mod&amp;ifica file ignorati</translation>
     </message>
     <message>
+        <location filename="../src/gui/generalsettings.ui" line="225"/>
+        <source>Create Debug Archive …</source>
+        <translation>Crea archivio di debug…</translation>
+    </message>
+    <message>
         <location filename="../src/gui/generalsettings.ui" line="242"/>
         <source>Ask for confirmation before synchronizing folders larger than</source>
         <translation>Chiedi conferma prima di scaricare cartelle più grandi di</translation>
@@ -1482,6 +1619,26 @@ Se continui normalmente la sincronizzazione provocherai la sovrascrittura di tut
         <location filename="../src/gui/generalsettings.cpp" line="58"/>
         <source>Server notifications that require attention.</source>
         <translation>Notifiche del server che richiedono attenzione.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/generalsettings.cpp" line="352"/>
+        <source>Create Debug Archive</source>
+        <translation>Crea archivio di debug</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/generalsettings.cpp" line="352"/>
+        <source>Zip Archives</source>
+        <translation>Archivi zip</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/generalsettings.cpp" line="358"/>
+        <source>Debug Archive Created</source>
+        <translation>Archivio di debug creato</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/generalsettings.cpp" line="358"/>
+        <source>Debug archive is created at %1</source>
+        <translation>L&apos;archivio di debug è stato creato in %1</translation>
     </message>
 </context>
 <context>
@@ -1731,27 +1888,27 @@ I log saranno scritti in %1</translation>
 <context>
     <name>OCC::NSISUpdater</name>
     <message>
-        <location filename="../src/gui/updater/ocupdater.cpp" line="334"/>
+        <location filename="../src/gui/updater/ocupdater.cpp" line="336"/>
         <source>New Version Available</source>
         <translation>Nuova versione disponibile</translation>
     </message>
     <message>
-        <location filename="../src/gui/updater/ocupdater.cpp" line="340"/>
+        <location filename="../src/gui/updater/ocupdater.cpp" line="342"/>
         <source>&lt;p&gt;A new version of the %1 Client is available.&lt;/p&gt;&lt;p&gt;&lt;b&gt;%2&lt;/b&gt; is available for download. The installed version is %3.&lt;/p&gt;</source>
         <translation>&lt;p&gt;Una nuova versione del client %1 è disponibile.&lt;/p&gt;&lt;p&gt;&lt;b&gt;%2&lt;/b&gt; è disponibile per lo scaricamento. La versione installata è %3.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../src/gui/updater/ocupdater.cpp" line="354"/>
+        <location filename="../src/gui/updater/ocupdater.cpp" line="356"/>
         <source>Skip this version</source>
         <translation>Salta questa versione</translation>
     </message>
     <message>
-        <location filename="../src/gui/updater/ocupdater.cpp" line="355"/>
+        <location filename="../src/gui/updater/ocupdater.cpp" line="357"/>
         <source>Skip this time</source>
         <translation>Salta questa volta</translation>
     </message>
     <message>
-        <location filename="../src/gui/updater/ocupdater.cpp" line="356"/>
+        <location filename="../src/gui/updater/ocupdater.cpp" line="358"/>
         <source>Get update</source>
         <translation>Ottieni l&apos;aggiornamento</translation>
     </message>
@@ -2097,16 +2254,26 @@ for additional privileges during the process.</source>
         <translation>Condivisione schermo, incontri online e conferenze via web</translation>
     </message>
     <message>
-        <location filename="../src/gui/wizard/owncloudsetuppage.cpp" line="176"/>
-        <source>This URL is NOT secure as it is not encrypted.
-It is not advisable to use it.</source>
-        <translation>Questo URL NON è sicuro poiché non è cifrato.
-Non è consigliabile utilizzarlo.</translation>
+        <location filename="../src/gui/wizard/owncloudsetuppage.cpp" line="95"/>
+        <source>Log in to your %1</source>
+        <translation>Accedi al tuo %1</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/wizard/owncloudsetuppage.cpp" line="96"/>
+        <source>This is the link to your %1 web interface when you open it in the browser.&lt;br/&gt;It looks like https://cloud.example.com or https://example.com/cloud</source>
+        <translation>Questo è il collegamento alla tua interfaccia web di %1 quando la apri nel browser. Si presenta come https://cloud.esempio.com o https://esempio.com/cloud</translation>
     </message>
     <message>
         <location filename="../src/gui/wizard/owncloudsetuppage.cpp" line="180"/>
         <source>This URL is secure. You can use it.</source>
         <translation>Questo URL è sicuro. Puoi utilizzarlo.</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/wizard/owncloudsetuppage.cpp" line="176"/>
+        <source>This URL is NOT secure as it is not encrypted.
+It is not advisable to use it.</source>
+        <translation>Questo URL NON è sicuro poiché non è cifrato.
+Non è consigliabile utilizzarlo.</translation>
     </message>
     <message>
         <location filename="../src/gui/wizard/owncloudsetuppage.cpp" line="223"/>
@@ -2686,32 +2853,32 @@ Non è consigliabile utilizzarlo.</translation>
         <translation>Icona</translation>
     </message>
     <message>
-        <location filename="../src/gui/sharedialog.cpp" line="77"/>
+        <location filename="../src/gui/sharedialog.cpp" line="92"/>
         <source>%1</source>
         <translation>%1</translation>
     </message>
     <message>
-        <location filename="../src/gui/sharedialog.cpp" line="98"/>
+        <location filename="../src/gui/sharedialog.cpp" line="113"/>
         <source>Folder: %2</source>
         <translation>Cartella: %2</translation>
     </message>
     <message>
-        <location filename="../src/gui/sharedialog.cpp" line="101"/>
+        <location filename="../src/gui/sharedialog.cpp" line="116"/>
         <source>%1 Sharing</source>
         <translation>Condivisione %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/sharedialog.cpp" line="275"/>
+        <location filename="../src/gui/sharedialog.cpp" line="294"/>
         <source>The file can not be shared because it was shared without sharing permission.</source>
         <translation>Il file non può essere condiviso poiché è stato condiviso senza il permesso di condivisione.</translation>
     </message>
     <message>
-        <location filename="../src/gui/sharedialog.cpp" line="314"/>
+        <location filename="../src/gui/sharedialog.cpp" line="335"/>
         <source>Password for share required</source>
         <translation>Password per condivisione richiesta</translation>
     </message>
     <message>
-        <location filename="../src/gui/sharedialog.cpp" line="315"/>
+        <location filename="../src/gui/sharedialog.cpp" line="336"/>
         <source>Please enter a password for your link share:</source>
         <translation>Digita una password per il tuo collegamento di condivisione:</translation>
     </message>
@@ -2960,6 +3127,11 @@ Non è consigliabile utilizzarlo.</translation>
         <translation>Condivisione da menu contestuale</translation>
     </message>
     <message>
+        <location filename="../src/gui/socketapi.cpp" line="752"/>
+        <source>Select new location …</source>
+        <translation>Seleziona nuova posizione…</translation>
+    </message>
+    <message>
         <location filename="../src/gui/socketapi.cpp" line="694"/>
         <source>I shared something with you</source>
         <translation>Ho condiviso qualcosa con te</translation>
@@ -2991,25 +3163,55 @@ Non è consigliabile utilizzarlo.</translation>
         <translation>La ri-condivisione di questo file non è consentita</translation>
     </message>
     <message>
-        <location filename="../src/gui/socketapi.cpp" line="749"/>
-        <location filename="../src/gui/socketapi.cpp" line="751"/>
+        <location filename="../src/gui/socketapi.cpp" line="750"/>
+        <location filename="../src/gui/socketapi.cpp" line="752"/>
         <source>Copy public link</source>
         <translation>Copia collegamento pubblico</translation>
     </message>
     <message>
-        <location filename="../src/gui/socketapi.cpp" line="755"/>
+        <location filename="../src/gui/socketapi.cpp" line="756"/>
         <source>Copy internal link</source>
         <translation>Copia collegamento interno</translation>
     </message>
     <message>
-        <location filename="../src/gui/socketapi.cpp" line="809"/>
+        <location filename="../src/gui/socketapi.cpp" line="810"/>
         <source>Edit</source>
         <translation>Modifica</translation>
     </message>
     <message>
-        <location filename="../src/gui/socketapi.cpp" line="811"/>
+        <location filename="../src/gui/socketapi.cpp" line="812"/>
         <source>Open in browser</source>
         <translation>Apri nel browser</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/socketapi.cpp" line="914"/>
+        <source>Resolve conflict …</source>
+        <translation>Risolvi conflitto…</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/socketapi.cpp" line="918"/>
+        <source>Move and rename …</source>
+        <translation>Sposta e rinomina…</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/socketapi.cpp" line="921"/>
+        <source>Move, rename and upload …</source>
+        <translation>Sposta, rinomina e carica…</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/socketapi.cpp" line="923"/>
+        <source>Delete local changes</source>
+        <translation>Elimina modifiche locali</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/socketapi.cpp" line="929"/>
+        <source>Move and upload …</source>
+        <translation>Sposta e carica…</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/socketapi.cpp" line="930"/>
+        <source>Delete</source>
+        <translation>Elimina</translation>
     </message>
 </context>
 <context>
@@ -3494,27 +3696,27 @@ Non è consigliabile utilizzarlo.</translation>
 <context>
     <name>OCC::Systray</name>
     <message>
-        <location filename="../src/gui/systray.cpp" line="86"/>
+        <location filename="../src/gui/systray.cpp" line="92"/>
         <source>Add account</source>
         <translation>Aggiungi account</translation>
     </message>
     <message>
-        <location filename="../src/gui/systray.cpp" line="88"/>
+        <location filename="../src/gui/systray.cpp" line="94"/>
         <source>Open main dialog</source>
         <translation>Apri finestra principale</translation>
     </message>
     <message>
-        <location filename="../src/gui/systray.cpp" line="90"/>
+        <location filename="../src/gui/systray.cpp" line="96"/>
         <source>Settings</source>
         <translation>Impostazioni</translation>
     </message>
     <message>
-        <location filename="../src/gui/systray.cpp" line="91"/>
+        <location filename="../src/gui/systray.cpp" line="97"/>
         <source>Exit %1</source>
         <translation>Esci da %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/systray.cpp" line="172"/>
+        <location filename="../src/gui/systray.cpp" line="178"/>
         <source>%1: %2</source>
         <translation>%1: %2</translation>
     </message>
@@ -3962,14 +4164,29 @@ Non è consigliabile utilizzarlo.</translation>
         <translation>Indirizzo del server</translation>
     </message>
     <message>
+        <location filename="../src/gui/wizard/owncloudsetupnocredspage.ui" line="245"/>
+        <source>This is the link to your %1 web interface when you open it in the browser.&lt;br/&gt;It looks like https://cloud.example.com or https://example.com/cloud</source>
+        <translation>Questo è il collegamento alla tua interfaccia web di %1 quando la apri nel browser. Si presenta come https://cloud.esempio.com o https://esempio.com/cloud</translation>
+    </message>
+    <message>
         <location filename="../src/gui/wizard/owncloudsetupnocredspage.ui" line="343"/>
         <source>Register with a provider</source>
         <translation>Registrati presso un fornitore</translation>
     </message>
     <message>
+        <location filename="../src/gui/wizard/owncloudsetupnocredspage.ui" line="359"/>
+        <source>Sign up with a provider</source>
+        <translation>Registrati a un fornitore</translation>
+    </message>
+    <message>
         <location filename="../src/gui/wizard/owncloudsetupnocredspage.ui" line="365"/>
         <source>Log in</source>
         <translation>Accedi</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/wizard/owncloudsetupnocredspage.ui" line="381"/>
+        <source>Log in to your %1</source>
+        <translation>Accedi al tuo %1</translation>
     </message>
 </context>
 <context>
@@ -4167,121 +4384,119 @@ Non è consigliabile utilizzarlo.</translation>
     <name>Window</name>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="25"/>
-        <location filename="../src/gui/tray/Window.qml" line="103"/>
+        <location filename="../src/gui/tray/Window.qml" line="101"/>
         <source>Nextcloud desktop main dialog</source>
         <translation>Finestra principale di Nextcloud desktop</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="141"/>
+        <location filename="../src/gui/tray/Window.qml" line="139"/>
         <source>Current account</source>
         <translation>Account attuale</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="149"/>
+        <location filename="../src/gui/tray/Window.qml" line="143"/>
         <source>Resume sync for all</source>
         <translation>Riprendi la sincronizzazione per tutto</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="149"/>
+        <location filename="../src/gui/tray/Window.qml" line="143"/>
         <source>Pause sync for all</source>
         <translation>Sospendi la sincronizzazione per tutto</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="185"/>
+        <location filename="../src/gui/tray/Window.qml" line="177"/>
         <source>Account switcher and settings menu</source>
         <translation>Selettore account e menu impostazioni</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="217"/>
+        <location filename="../src/gui/tray/Window.qml" line="211"/>
         <source>Add account</source>
         <translation>Aggiungi account</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="243"/>
+        <location filename="../src/gui/tray/Window.qml" line="235"/>
         <source>Add new account</source>
         <translation>Aggiungi nuovo account</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="255"/>
+        <location filename="../src/gui/tray/Window.qml" line="249"/>
         <source>Settings</source>
         <translation>Impostazioni</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="272"/>
+        <location filename="../src/gui/tray/Window.qml" line="266"/>
         <source>Exit</source>
         <translation>Esci</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="344"/>
+        <location filename="../src/gui/tray/Window.qml" line="336"/>
         <source>Current user avatar</source>
         <translation>Avatar dell&apos;utente attuale</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="366"/>
+        <location filename="../src/gui/tray/Window.qml" line="368"/>
         <source>Connected</source>
         <translation>Connesso</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="366"/>
+        <location filename="../src/gui/tray/Window.qml" line="368"/>
         <source>Disconnected</source>
         <translation>Disconnesso</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="420"/>
+        <location filename="../src/gui/tray/Window.qml" line="422"/>
         <source>Open local folder of current account</source>
         <translation>Apri cartella locale dell&apos;account attuale</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="432"/>
+        <location filename="../src/gui/tray/Window.qml" line="434"/>
         <source>Open Nextcloud Talk in browser</source>
         <translation>Apri Nextcloud Talk nel browser</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="450"/>
+        <location filename="../src/gui/tray/Window.qml" line="452"/>
         <source>More apps</source>
         <translation>Altre applicazioni</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="467"/>
+        <location filename="../src/gui/tray/Window.qml" line="469"/>
         <source>Apps menu</source>
         <translation>Menu Applicazioni</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="495"/>
-        <location filename="../src/gui/tray/Window.qml" line="531"/>
-        <source>Open</source>
-        <translation>Apri</translation>
+        <location filename="../src/gui/tray/Window.qml" line="497"/>
+        <source>Open %1 in browser</source>
+        <translation>Apri %1 nel browser</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="495"/>
-        <source>in browser</source>
-        <translation>nel browser</translation>
-    </message>
-    <message>
-        <location filename="../src/gui/tray/Window.qml" line="519"/>
+        <location filename="../src/gui/tray/Window.qml" line="521"/>
         <source>Activity list</source>
         <translation>Elenco attività</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="531"/>
-        <source>locally</source>
-        <translation>localmente</translation>
+        <location filename="../src/gui/tray/Window.qml" line="533"/>
+        <source>Open %1 locally</source>
+        <translation>Apri %1 localmente</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="574"/>
+        <location filename="../src/gui/tray/Window.qml" line="578"/>
         <source>Open share dialog</source>
         <translation>Apri finestra di condivisione</translation>
     </message>
     <message>
-        <location filename="../src/gui/tray/Window.qml" line="647"/>
-        <source>Share</source>
-        <translation>Condividi</translation>
+        <location filename="../src/gui/tray/Window.qml" line="643"/>
+        <source>Share %1</source>
+        <translation>Condividi %1</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/tray/Window.qml" line="665"/>
+        <source>Open Talk</source>
+        <translation>Apri Talk</translation>
     </message>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="669"/>
-        <location filename="../src/gui/tray/Window.qml" line="673"/>
-        <source>Open Talk</source>
-        <translation>Apri Talk</translation>
+        <source>Open Talk %1</source>
+        <translation>Apri Talk %1</translation>
     </message>
 </context>
 <context>

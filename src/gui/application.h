@@ -67,7 +67,7 @@ public:
     bool versionOnly(); // only display the version?
     void showVersion();
 
-    void showSettingsDialog();
+    void showMainDialog();
 
 public slots:
     // TODO: this should not be public
@@ -116,7 +116,6 @@ private:
     bool _userTriggeredConnect;
     bool _debugMode;
     bool _backgroundMode;
-    bool _isQuitting;
 
     ClientProxy _proxy;
 

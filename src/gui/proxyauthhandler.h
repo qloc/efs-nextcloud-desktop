@@ -23,7 +23,6 @@
 #include <QScopedPointer>
 #include <QSettings>
 #include <QSet>
-#include <QEventLoop>
 
 namespace QKeychain {
 class Job;

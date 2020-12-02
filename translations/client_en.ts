@@ -1570,7 +1570,7 @@ Items where deletion is allowed will be deleted if they prevent a directory from
     </message>
     <message>
         <location filename="../src/gui/legalnotice.cpp" line="27"/>
-        <source>&lt;p&gt;Copyright 2017-2020 EFScloud GmbH&lt;/p&gt;</source>
+        <source>&lt;p&gt;Copyright 2017-2020 EFS-AG&lt;br /&gt;Copyright 2012-2018 EFS-AG&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -1,6 +1,6 @@
 /*
  * Copyright (C) by Olivier Goffart <ogoffart@woboq.com>
- * Copyright (C) by Michael Schuster <michael@nextcloud.com>
+ * Copyright (C) by Michael Schuster <michael@schuster.ms>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -61,8 +61,8 @@ public:
     QString _appPassword;
 
 private:
-    Flow2AuthWidget *_flow2AuthWidget;
-    QVBoxLayout *_layout;
+    Flow2AuthWidget *_flow2AuthWidget = nullptr;
+    QVBoxLayout *_layout = nullptr;
 };
 
 } // namespace OCC
