@@ -20,7 +20,7 @@ addons:
 script:
   - mkdir -p ${NC_BUILD_DIR}
   - cd ${NC_BUILD_DIR}
-  - cmake -Wno-dev -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/ -DCMAKE_PREFIX_PATH=/usr/local/opt/qt5 -DCMAKE_INSTALL_PREFIX=${NC_INSTALL_DIR} -DCMAKE_BUILD_TYPE=Debug -DNO_SHIBBOLETH=1 ${TRAVIS_BUILD_DIR}
+  - cmake -Wno-dev -DBUILD_UPDATER=ON -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/ -DCMAKE_PREFIX_PATH=/usr/local/opt/qt5 -DCMAKE_INSTALL_PREFIX=${NC_INSTALL_DIR} -DCMAKE_BUILD_TYPE=Debug -DNO_SHIBBOLETH=1 ${TRAVIS_BUILD_DIR}
   - make
   - make install
   - bash admin/osx/create_mac.sh ${NC_INSTALL_DIR} ${NC_BUILD_DIR} "Quality Location GmbH"
