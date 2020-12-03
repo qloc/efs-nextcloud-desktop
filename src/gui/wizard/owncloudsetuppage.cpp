@@ -83,6 +83,9 @@ OwncloudSetupPage::OwncloudSetupPage(QWidget *parent)
     connect(_ui.nextButton, &QPushButton::clicked, _ui.slideShow, &SlideShow::nextSlide);
     connect(_ui.prevButton, &QPushButton::clicked, _ui.slideShow, &SlideShow::prevSlide);
 
+    _ui.createAccountButton->hide();
+    _ui.installLink->hide();
+
     _ui.slideShow->startShow();
 #else
     _ui.createAccountButton->hide();

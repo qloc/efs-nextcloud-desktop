@@ -246,7 +246,7 @@ QString Theme::helpUrl() const
 #ifdef APPLICATION_HELP_URL
     return QString::fromLatin1(APPLICATION_HELP_URL);
 #else
-    return QString::fromLatin1("https://docs.nextcloud.com/desktop/%1.%2/").arg(MIRALL_VERSION_MAJOR).arg(MIRALL_VERSION_MINOR);
+    return QString::fromLatin1("https://www.efs-ag.de/");
 #endif
 }
 
@@ -346,9 +346,8 @@ QString Theme::gitSHA1() const
         "https://github.com/nextcloud/desktop/commit/"));
     const QString gitSha1(QLatin1String(GIT_SHA1));
     devString = QCoreApplication::translate("nextcloudTheme::about()",
-        "<p><small>Built from Git revision <a href=\"%1\">%2</a>"
-        " on %3, %4 using Qt %5, %6</small></p>")
-                    .arg(githubPrefix + gitSha1)
+        "<p><small>Built from Git revision %1"
+        " on %2, %3 using Qt %4, %5</small></p>")
                     .arg(gitSha1.left(6))
                     .arg(__DATE__)
                     .arg(__TIME__)
